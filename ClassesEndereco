@@ -1,0 +1,50 @@
+
+package DepartamentoEndereco;
+
+
+public class Endereco {
+    
+    public String rua;
+    public int numero;
+    public String cidade;
+    
+    
+}
+
+-------------------------------------------------
+
+em outra pagina escreva o seguinte codigo
+
+-------------------------------------------------
+
+
+package DepartamentoEndereco;
+
+
+public class TesteEndereco {
+    
+    public static void main(String[] args) {
+        
+        Endereco Endereco1 = new Endereco();
+        Endereco Endereco2 = new Endereco();
+        
+        Endereco1.cidade = "Blumenau";
+        Endereco1.rua = "Rua Valentina Fusinato";
+        Endereco1.numero = 30;
+        
+        Endereco2.cidade = "Blumenau";
+        Endereco2.rua = "Dois de Setembro";
+        Endereco2.numero = 788;
+        
+        System.out.println(Endereco1.cidade);
+        System.out.println(Endereco1.rua);
+        System.out.println(Endereco1.numero);
+        
+        System.out.println("\n-----------------------\n");
+        
+        System.out.println(Endereco2.cidade);
+        System.out.println(Endereco2.rua);
+        System.out.println(Endereco2.numero);
+    }
+    
+}
