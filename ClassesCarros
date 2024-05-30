@@ -1,0 +1,48 @@
+
+package CarroDepartamento;
+
+
+public class Carro {
+    
+    public String marca;
+    public String modelo;
+    public int ano;
+
+    
+}
+
+--------------------------------------------
+
+Em outro pacote voce faz o seguinte codigo
+
+--------------------------------------------
+
+package CarroDepartamento;
+
+import javax.swing.JOptionPane;
+
+public class TesteCarro {
+
+    public static void main(String[] args) {
+
+        Carro[] carros = new Carro[3];
+
+        for (int i = 0; i < carros.length; i++) {
+
+            carros[i] = new Carro();
+            carros[i].marca = JOptionPane.showInputDialog("Digite o modelo do carro: ");
+            carros[i].modelo = JOptionPane.showInputDialog("Digite a marca do carro: ");
+            carros[i].ano = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano do carro: "));
+
+        }
+
+        String listaCarros = null;
+        for (Carro carro : carros) {
+            System.out.println("Carro: " + carro.marca
+                    + ", " + carro.modelo
+                    + ", " + carro.ano);
+        }
+
+    }
+
+}
